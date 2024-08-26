@@ -1,0 +1,70 @@
+/* Mengatur tampilan umum */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mengatur gambar berbentuk persegi yang lebih besar */
+.container img {
+    width: 300px; /* Ukuran yang lebih besar */
+    height: 300px; /* Lebar dan tinggi sama untuk membuat gambar berbentuk persegi */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+/* Mengatur tombol */
+.container .btn {
+    display: inline-block;
+    background-color: #ff4b2b;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container .btn:hover {
+    background-color: #ff416c;
+    transform: translateY(-2px);
+}
+
+.container .btn:active {
+    background-color: #e43e1e;
+    transform: translateY(0);
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 480px) {
+    .container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container .btn {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+}
